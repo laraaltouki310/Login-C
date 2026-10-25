@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#26181b,#1a0b0f);
+    overflow: hidden;
+}
+.login-container{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    justify-content: center;
+    align-items: left;
+    display: flex;
+}
+.container{
+    position: absolute;
+    width: 320px;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #a58f7d;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    box-shadow: 0px 12px 30px rgba(65, 64, 64, 0.281);
+}
+.container form{
+    width: 100%;
+    padding: 0 50px;
+}
+.container h1{
+    color: #a58f7d;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 90px;
+    margin-right: 100px;
+}
+#username-a{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #f7f8fa;
+    margin-top: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    outline: none;
+    color: #fffefd;
+    font-size: 1rem;
+    transition: 0.5s ease;
+}
+#username-a:focus,
+#username-a:valid{
+    border-color: #ffffff;
+}
+.Username-a label{
+    position: absolute;
+    top: 49%;
+    left: 65px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #a58f7d;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+.Username-a :focus ~ label,
+.Username-a :valid ~ label{
+    top: 168px;
+    font-size: 0.8em;
+    background: #3d2e32;
+    border-radius: 30px;
+    padding: 0 6px;
+    color: #fffefd;
+}
+#password{
+    position: relative;
+    margin: 25px 0;
+}
+#password{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin-top: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.5s ease;
+}
+#password:focus,
+#password:valid{
+    border-color: #ffffff;
+}
+.Password label{
+    position: absolute;
+    top: 68%;
+    left: 65px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #a58f7d;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+.Password :focus ~ label,
+.Password :valid ~ label{
+    margin-top: 240px;
+    top: 1px;
+    font-size: 0.8em;
+    background: #3d2e32;
+    border-radius: 30px;
+    padding: 0 6px;
+    color: #f8fafa;
+}
+.btn{
+    background: #a58f7d;
+    color: #2c1f23;
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-color: #49373d;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #312226;
+    color: #ffffff;
+    border-color: #a58f7d;
+}
+.ball{
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#5c4e52 0%,#4b373c75 10%);
+    box-shadow: inset -20px -25px 40px rgba(0,0,0,.12), 
+    inset 15px 18px 30px #a58f7d,
+    0 20px 45px rgba(0,0,0,.18);
+}
+.ball-1{
+    width: 200px;
+    height: 200px;
+    top: 15px;
+    left: 390px;
+    animation: rotatecircle 5s linear infinite ;
+}
+.ball-2{
+    width: 80px;
+    height: 80px;
+    top: 90px;
+    left: 860px;
+    animation: rotatecircle 5s linear infinite ;
+}
+.ball-3{
+    width: 65px;
+    height: 65px;
+    top: 165px;
+    left: 180px;
+    animation: rotatecircle 5s linear infinite;
+}
+.ball-4{
+    width: 320px;
+    height: 320px;
+    right: 280px;
+    bottom: 10px;
+    animation: rotatecircle 5s linear infinite ;
+}
+.ball-5{
+    width: 220px;
+    height: 220px;
+    bottom: 50px;
+    left: 100px;
+    animation: rotatecircle 5s linear infinite ;
+}
+.ball-6{
+    width: 90px;
+    height: 90px;
+    top: 390px;
+    left: 45px;
+    animation: rotatecircle 5s linear infinite ;
+}
+.ball-7{
+    width: 200px;
+    height: 200px;
+    right: 80px;
+    bottom: 300px;
+    animation: rotatecircle 5s linear infinite ;
+} 
+.ball-8{
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    bottom: 250px;
+    animation: rotatecircle 5s linear infinite ;
+}
+@keyframes rotatecircle{
+    from{
+        transform: rotate(2deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
